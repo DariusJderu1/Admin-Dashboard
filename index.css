@@ -12,6 +12,8 @@
     --background-color: #BDC3C7;
     --accent-color: #E67E22;
     --card-color: #FDFEFE;
+
+    --paragraph-font-size: 1.18rem;
 }
 
 body {
@@ -65,6 +67,11 @@ header {
         align-items: center;
 
         gap: 7px;
+
+        .material-symbols-outlined {
+
+            font-size: 30px;
+        }
     }
 
     div.top-right {
@@ -73,7 +80,7 @@ header {
         justify-content: center;
         align-items: center;
 
-        gap: 18px;
+        gap: 16px;
 
         img {
 
@@ -83,8 +90,32 @@ header {
 
         p {
 
-            font-size: 1.25rem;
+            font-size: 1.28rem;
             font-weight: 600;
+        }
+
+        .material-symbols-outlined {
+
+            font-size: 35px;
+        }
+    }
+
+    div.bottom-left {
+
+        display: flex;
+        align-items: center;
+
+        gap: 16px;
+
+        img {
+
+            width: 100px;
+            aspect-ratio: 1 / 1;
+        }
+
+        p {
+
+            font-size: var(--paragraph-font-size);
         }
     }
 }
