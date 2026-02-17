@@ -1,3 +1,25 @@
+/* prerequisite */
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --side-bar-color: #34495E;
+    --background-color: #BDC3C7;
+    --accent-color: #E67E22;
+    --card-color: #FDFEFE;
+}
+
+body {
+
+    font-family: "SN Pro", sans-serif, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+/* prerequisite */
+
 img {
 
     width: 100px;
