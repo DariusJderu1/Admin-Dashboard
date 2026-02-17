@@ -17,11 +17,76 @@
 body {
 
     font-family: "SN Pro", sans-serif, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    display: grid;
+    grid-template-columns: 1fr 4fr;
 }
 /* prerequisite */
+
 
 img {
 
     width: 100px;
     height: auto;
 }
+
+header {
+
+    background-color: var(--card-color);
+
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: minmax(250px, 3fr) 1fr;
+    
+    align-items: center;
+
+    gap: clamp(15px, 15%, 50px);
+
+    img {
+
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    input {
+
+        background-color: #E0F2FE;
+        border-radius: 10px;
+        height: 28px;
+
+        flex: 1;
+    }
+    form div {
+
+        display: flex;
+        align-items: center;
+
+        gap: 7px;
+    }
+
+    div.top-right {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 18px;
+
+        img {
+
+            width: 60px;
+            aspect-ratio: 1 / 1;
+        }
+
+        p {
+
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+    }
+}
+
+
