@@ -118,6 +118,30 @@ header {
             font-size: var(--paragraph-font-size);
         }
     }
+
+    div.bottom-right {
+
+        display: flex;
+        gap: 20px;
+        
+        button {
+
+            width: 110px;
+            height: 35px;
+
+            border-radius: 40px;
+
+            font-family: inherit;
+            font-size: 1.15rem;
+
+            border: none;
+
+            background-color: var(--accent-color);
+            color: white;
+        }
+        
+
+    }
 }
 
 
