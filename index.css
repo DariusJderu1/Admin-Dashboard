@@ -337,4 +337,42 @@ section.announcements div:first-of-type {
         gap: 8px;
     }
 }
+section.trending {
+
+    img {
+
+        object-fit: cover;
+        border-radius: 50%;
+
+        width: 30px;
+        aspect-ratio: 1 / 1;
+
+        flex-shrink: 0;
+    }
+
+    ul {
+
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    li {
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        div p:first-child {
+
+            font-size: clamp(1rem, 1vw, 1.15rem);
+            font-weight: 600;
+        }
+
+        div p:nth-child(2) {
+
+            font-size: clamp(0.9rem, 1vw, 1rem);
+        }
+    }
+}
 /* main */
