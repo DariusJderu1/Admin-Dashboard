@@ -253,21 +253,44 @@ section.projects-section {
     flex-direction: column;
     gap: 10px;
 
-    div.articles {
+    h3 {
 
-        flex: 1;
-
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
-        gap: 20px;
+        font-size: clamp(1.3rem, 1.35vw, 1.5rem);
     }
-    
+
+    p {
+
+        font-size: clamp(0.95rem, 1vw, 1.1rem);
+    }
+}
+div.articles {
+
+    flex: 1;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 20px;
+
     article.card {
 
         background-color: var(--card-color);
-        padding: 10px;
+        padding: 25px;
+        border-radius: 10px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        -webkit-box-shadow: -4px 4px 15px -3px #000000; 
+        box-shadow: -4px 4px 15px -3px #000000;
     }
 
+    .card-actions {
+
+        align-self: end;
+        margin-top: auto;
+    }
 }
+   
 /* main */
